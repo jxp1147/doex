@@ -7,6 +7,11 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
   security:
     oauth2:
-      resourceserver:10
+      resource server:10
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:/db/migration/schema.sql
+      data-locations: classpath:/db/migration/data.sql
 #  resources:
 #    static-locations: classpath:/static/
