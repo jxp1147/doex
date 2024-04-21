@@ -27,7 +27,9 @@ CREATE TABLE IF NOT EXISTS users (
     job_id int,
     FOREIGN KEY (job_id) REFERENCES jobs(id),
     question_num INT default 0,
-    create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    create_time TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    `avatar` text,
+    `signature` text
     );
 
 create table if not exists achieves (
