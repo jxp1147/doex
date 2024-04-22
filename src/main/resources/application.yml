@@ -10,7 +10,7 @@ spring:
       resource server:10
   sql:
     init:
-      mode: always
+      mode: never
       schema-locations: classpath:/db/migration/schema.sql
       data-locations: classpath:/db/migration/data.sql
 #  resources:

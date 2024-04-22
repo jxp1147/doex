@@ -1,7 +1,6 @@
-package org.example.doex.entity;
+package org.example.doex.entity.dbbo;
 
-public class Industries  {
-
+public class IndustriesBO {
     private Integer id;
 
     private String industryName;

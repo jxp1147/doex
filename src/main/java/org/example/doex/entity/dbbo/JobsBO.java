@@ -1,8 +1,10 @@
-package org.example.doex.entity;
+package org.example.doex.entity.dbbo;
 
-public class Industries  {
+public class JobsBO {
 
     private Integer id;
+
+    private String jobName;
 
     private String industryName;
 
@@ -12,6 +14,13 @@ public class Industries  {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+    public String getJobName() {
+        return jobName;
+    }
+
+    public void setJobName(String jobName) {
+        this.jobName = jobName;
     }
     public String getIndustryName() {
         return industryName;
@@ -23,8 +32,9 @@ public class Industries  {
 
     @Override
     public String toString() {
-        return "Industries{" +
+        return "Jobs{" +
             "id=" + id +
+            ", jobName=" + jobName +
             ", industryName=" + industryName +
         "}";
     }
