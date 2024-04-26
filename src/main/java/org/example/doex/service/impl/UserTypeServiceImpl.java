@@ -1,6 +1,5 @@
 package org.example.doex.service.impl;
-
-import org.example.doex.entity.UserType;
+import org.example.doex.entity.vo.UserTypeVO;
 import org.example.doex.mapper.UserTypeMapper;
 import org.example.doex.service.IUserTypeService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
@@ -15,6 +14,6 @@ import org.springframework.stereotype.Service;
  * @since 2024-04-22
  */
 @Service
-public class UserTypeServiceImpl extends ServiceImpl<UserTypeMapper, UserType> implements IUserTypeService {
+public class UserTypeServiceImpl extends ServiceImpl<UserTypeMapper, UserTypeVO> implements IUserTypeService {
 
 }

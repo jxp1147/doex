@@ -15,7 +15,8 @@ spring:
       data-locations: classpath:/db/migration/data.sql
 jwt:
   secret: mySuperSecretKey
-  expiration: 3600
+  expiration:
+    minutes: 30
   refresh-threshold: 300  # 5 minutes
   issuer: myapp
   audience: backend-service

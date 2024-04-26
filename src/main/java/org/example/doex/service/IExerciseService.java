@@ -1,7 +1,7 @@
 package org.example.doex.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
-import org.example.doex.entity.vo.UserTypeVO;
+import org.example.doex.entity.vo.ExerciseVO;
 
 /**
  * <p>
@@ -11,6 +11,6 @@ import org.example.doex.entity.vo.UserTypeVO;
  * @author jxp
  * @since 2024-04-22
  */
-public interface IUserTypeService extends IService<UserTypeVO> {
+public interface IExerciseService extends IService<ExerciseVO> {
 
 }

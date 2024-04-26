@@ -1,0 +1,23 @@
+package org.example.doex.entity.vo;
+
+/**
+ * <p>
+ * 
+ * </p>
+ *
+ * @author jxp
+ * @since 2024-04-22
+ */
+public class AchieveVO {
+    private Integer id;
+
+    private String achieveName;
+
+    @Override
+    public String toString() {
+        return "Achieves{" +
+            "id=" + id +
+            ", achieveName=" + achieveName +
+        "}";
+    }
+}

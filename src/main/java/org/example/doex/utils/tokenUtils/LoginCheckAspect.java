@@ -12,10 +12,10 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 @Component
 public class LoginCheckAspect {
 
-    private final UserService userService;
+    private final UserServiceUtil userServiceUtil;
 
-    public LoginCheckAspect(UserService userService) {
-        this.userService = userService;
+    public LoginCheckAspect(UserServiceUtil userServiceUtil) {
+        this.userServiceUtil = userServiceUtil;
     }
 
     @Around("@annotation(org.example.doex.utils.tokenUtils.RequireLogin)")
@@ -26,7 +26,7 @@ public class LoginCheckAspect {
         HttpServletRequest request = (HttpServletRequest) requestAttributes.getRequest();
 
         // 检查用户是否已登录
-        if (!userService.isUserLoggedIn(request)) {
+        if (!userServiceUtil.isUserLoggedIn(request)) {
             throw new NotLoggedInException("User must be logged in to access this resource.");
         }
 
